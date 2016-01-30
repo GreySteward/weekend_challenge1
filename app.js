@@ -32,12 +32,12 @@ $(document).ready(function() {
 		$('#container').append('<div></div>');
 		var $el = $('#container').children().last();
 
-		$el.append('<p>EmployeeFirstName: ' + empInfo.empFirstName + '</p>');
-		$el.append('<p>EmployeeLastName: ' + empInfo.empLastName + '</p>');
-		$el.append('<p>Employee ID: ' + empInfo.empId + '</p>');
+		$el.append('<p>EmployeeFirstName:  ' + empInfo.empFirstName + '</p>');
+		$el.append('<p>EmployeeLastName:   ' + empInfo.empLastName + '</p>');
+		$el.append('<p>Employee ID:        ' + empInfo.empId + '</p>');
 		$el.append('<p>Employee Job Title: ' + empInfo.empJobTitle + '</p>');
-		$el.append('<p>Employee Salary: ' + empInfo.empSalary + '</p>');
-		$el.append('<p>Employee Monthly Salary: ' + empMonthlySalary + '</p>');
+		$el.append('<p>Employee Salary:    ' + empInfo.empSalary + '</p>');
+		$el.append('<p>Emp Monthly Salary: ' + empMonthlySalary + '</p>');
 	}
 });
 
