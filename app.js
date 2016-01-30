@@ -24,7 +24,7 @@ $(document).ready(function() {
 	});
 
 	$('#button').on('click', function(event) {
-		$('#container').find('p').remove();
+		$('#container').find('.emp').remove();
 		console.log('clear');
 	});
 
@@ -32,12 +32,13 @@ $(document).ready(function() {
 		$('#container').append('<div></div>');
 		var $el = $('#container').children().last();
 
-		$el.append('<p>EmployeeFirstName:  ' + empInfo.empFirstName + '</p>');
-		$el.append('<p>EmployeeLastName:   ' + empInfo.empLastName + '</p>');
-		$el.append('<p>Employee ID:        ' + empInfo.empId + '</p>');
-		$el.append('<p>Employee Job Title: ' + empInfo.empJobTitle + '</p>');
-		$el.append('<p>Employee Salary:    ' + empInfo.empSalary + '</p>');
-		$el.append('<p>Emp Monthly Salary: ' + empMonthlySalary + '</p>');
+		$el.append('<p class = "emp">EmployeeFirstName: ' + empInfo.empFirstName + '</p>');
+		$el.append('<p class = "emp">EmployeeLastName: ' + empInfo.empLastName + '</p>');
+		$el.append('<p class = "emp">Employee ID: ' + empInfo.empId + '</p>');
+		$el.append('<p class = "emp">Employee Job Title: ' + empInfo.empJobTitle + '</p>');
+		$el.append('<p class = "emp">Employee Salary: ' + empInfo.empSalary + '</p>');
+		$el.append('<p class = "emp">Emp Monthly Salary: ' + empMonthlySalary + '</p>');
+		$el.append('<p>Total Monthly Salary: ' + totalMonthlySalary + '</p>');
 	}
 });
 
